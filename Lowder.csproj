@@ -1,0 +1,96 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>LowderDotNet</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="backup\**" />
+    <Compile Remove="example\**" />
+    <Content Remove="example\**" />
+    <EmbeddedResource Remove="backup\**" />
+    <EmbeddedResource Remove="example\**" />
+    <None Remove="backup\**" />
+    <None Remove="example\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove=".gitattributes" />
+    <None Remove=".gitignore" />
+    <None Remove="LICENSE" />
+    <None Remove="_editor\.gitignore" />
+    <None Remove="_editor\editor.css" />
+    <None Remove="_editor\editor.html" />
+    <None Remove="_editor\editor.js" />
+    <None Remove="_editor\editor_webapi.html" />
+    <None Remove="_editor\editor_webapi.js" />
+    <None Remove="_editor\model\endpoint.js" />
+    <None Remove="_editor\model\node.js" />
+    <None Remove="_editor\model\schema.js" />
+    <None Remove="_editor\model\screen.js" />
+    <None Remove="_editor\model\solution.js" />
+    <None Remove="_editor\model\widget.js" />
+    <None Remove="_editor\ui\console-panel.js" />
+    <None Remove="_editor\ui\flow-panel.js" />
+    <None Remove="_editor\ui\grid.js" />
+    <None Remove="_editor\ui\json-panel.js" />
+    <None Remove="_editor\ui\property-panel.js" />
+    <None Remove="_editor\ui\routing.js" />
+    <None Remove="_editor\ui\screen-panel.js" />
+    <None Remove="_editor\ui\search-panel.js" />
+    <None Remove="_editor\ui\solution-panel.js" />
+    <None Remove="_editor\ui\test-panel.js" />
+    <None Remove="_editor\ui\ui-util.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="_editor\editor.css" />
+    <EmbeddedResource Include="_editor\editor.js" />
+    <EmbeddedResource Include="_editor\editor_webapi.html" />
+    <EmbeddedResource Include="_editor\editor_webapi.js" />
+    <EmbeddedResource Include="_editor\model\endpoint.js">
+    </EmbeddedResource>
+    <EmbeddedResource Include="_editor\model\node.js">
+    </EmbeddedResource>
+    <EmbeddedResource Include="_editor\model\schema.js">
+    </EmbeddedResource>
+    <EmbeddedResource Include="_editor\model\screen.js" />
+    <EmbeddedResource Include="_editor\model\solution.js">
+    </EmbeddedResource>
+    <EmbeddedResource Include="_editor\model\widget.js" />
+    <EmbeddedResource Include="_editor\ui\console-panel.js">
+    </EmbeddedResource>
+    <EmbeddedResource Include="_editor\ui\flow-panel.js">
+    </EmbeddedResource>
+    <EmbeddedResource Include="_editor\ui\grid.js">
+    </EmbeddedResource>
+    <EmbeddedResource Include="_editor\ui\json-panel.js">
+    </EmbeddedResource>
+    <EmbeddedResource Include="_editor\ui\property-panel.js">
+    </EmbeddedResource>
+    <EmbeddedResource Include="_editor\ui\routing.js">
+    </EmbeddedResource>
+    <EmbeddedResource Include="_editor\ui\search-panel.js" />
+    <EmbeddedResource Include="_editor\ui\solution-panel.js">
+    </EmbeddedResource>
+    <EmbeddedResource Include="_editor\ui\test-panel.js">
+    </EmbeddedResource>
+    <EmbeddedResource Include="_editor\ui\ui-util.js">
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="_editor\editor.css">
+    </EmbeddedResource>
+    <EmbeddedResource Update="_editor\editor.js">
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

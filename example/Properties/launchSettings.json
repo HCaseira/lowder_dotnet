@@ -1,0 +1,38 @@
+{
+    "profiles": {
+        "lowder": {
+            "commandName": "Project",
+            "launchBrowser": true,
+            "launchUrl": "lowder",
+            "environmentVariables": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            },
+            "dotnetRunMessages": true,
+            "applicationUrl": "https://localhost:7039;http://localhost:5039"
+        },
+        "IIS Express": {
+            "commandName": "IISExpress",
+            "launchBrowser": true,
+            "launchUrl": "lowder",
+            "environmentVariables": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            }
+        },
+        "Docker": {
+            "commandName": "Docker",
+            "launchBrowser": true,
+            "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/lowder",
+            "publishAllPorts": true,
+            "useSSL": true
+        }
+    },
+    "$schema": "https://json.schemastore.org/launchsettings.json",
+    "iisSettings": {
+        "windowsAuthentication": false,
+        "anonymousAuthentication": true,
+        "iisExpress": {
+            "applicationUrl": "http://localhost:9583",
+            "sslPort": 44313
+        }
+    }
+}
